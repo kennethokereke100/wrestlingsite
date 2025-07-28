@@ -87,6 +87,18 @@ export default function VenuesPage() {
               <ArrowBack />
             </IconButton>
           </Link>
+          <Typography 
+            variant="h6" 
+            component="div" 
+            sx={{ 
+              flexGrow: 1,
+              color: '#000000',
+              fontWeight: 600,
+              fontSize: '18px'
+            }}
+          >
+            Venues & Events
+          </Typography>
         </Toolbar>
       </AppBar>
 
