@@ -88,7 +88,7 @@ export default function MoreVerificationPage() {
               mb: 2
             }}
           >
-            We'll take 2 pictures of your ID. What ID would you like to use?
+            We&apos;ll take 2 pictures of your ID. What ID would you like to use?
           </Typography>
 
           {/* ID Type Cards */}
@@ -103,7 +103,7 @@ export default function MoreVerificationPage() {
                   backgroundColor: '#f9f9f9'
                 }
               }}
-              onClick={() => handleCardClick('Driver\'s License')}
+              onClick={() => handleCardClick('Driver&apos;s License')}
             >
               <CardContent sx={{ p: '12px 16px', '&:last-child': { pb: '12px' } }}>
                 <div className="flex items-center justify-between">
@@ -117,7 +117,7 @@ export default function MoreVerificationPage() {
                           fontSize: '16px'
                         }}
                       >
-                        Driver's License
+                        Driver&apos;s License
                       </Typography>
                       <Typography 
                         sx={{ 
@@ -323,7 +323,7 @@ export default function MoreVerificationPage() {
               <Button
                 variant="text"
                 fullWidth
-                onClick={() => handleButtonClick('Don\'t Allow')}
+                onClick={() => handleButtonClick('Don&apos;t Allow')}
                 sx={{
                   color: '#FF3B30',
                   textTransform: 'none',
@@ -335,7 +335,7 @@ export default function MoreVerificationPage() {
                   }
                 }}
               >
-                Don't Allow
+                Don&apos;t Allow
               </Button>
             </div>
           </div>

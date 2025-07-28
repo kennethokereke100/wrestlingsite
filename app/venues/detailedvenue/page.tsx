@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter, useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 import { 
   AppBar, 
   Toolbar, 
@@ -18,7 +19,7 @@ interface VenueData {
   phone: string;
 }
 
-export default function DetailedVenuePage() {
+function DetailedVenueContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const pinType = searchParams.get('pinType');
@@ -372,5 +373,13 @@ export default function DetailedVenuePage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function DetailedVenuePage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <DetailedVenueContent />
+    </Suspense>
   );
 } 

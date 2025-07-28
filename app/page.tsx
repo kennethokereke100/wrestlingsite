@@ -93,7 +93,7 @@ export default function Home() {
                 <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-3 w-0 h-0 border-l-10 border-l-white border-t-10 border-t-transparent border-b-10 border-b-transparent"></div>
                 
                 <p className="text-black font-medium text-base md:text-lg">
-                  I just got released and can't find bookings!
+                  I just got released and can&apos;t find bookings!
                 </p>
               </div>
             </div>
