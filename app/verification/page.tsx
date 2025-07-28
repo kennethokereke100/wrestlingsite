@@ -17,9 +17,7 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  Typography,
-  Box,
-  Container
+  Box
 } from '@mui/material';
 import { ArrowBack, Visibility, VisibilityOff, Clear } from '@mui/icons-material';
 import design from '../../styles/design.json';
@@ -196,7 +194,7 @@ export default function VerificationPage() {
               </InputLabel>
               <Select
                 value={formData.country}
-                onChange={(e: any) => handleInputChange('country', e.target.value)}
+                onChange={(e) => handleInputChange('country', e.target.value as string)}
                 sx={{
                   fontSize: design.typography.bodyLarge.fontSize,
                   fontWeight: design.typography.bodyLarge.fontWeight,
@@ -237,7 +235,7 @@ export default function VerificationPage() {
                 </InputLabel>
                 <Select
                   value={formData.phoneCode}
-                  onChange={(e: any) => handleInputChange('phoneCode', e.target.value)}
+                  onChange={(e) => handleInputChange('phoneCode', e.target.value as string)}
                   sx={{
                     fontSize: design.typography.bodyLarge.fontSize,
                     fontWeight: design.typography.bodyLarge.fontWeight,
