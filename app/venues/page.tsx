@@ -12,7 +12,7 @@ import {
   Box
 } from '@mui/material';
 import { ArrowBack } from '@mui/icons-material';
-import { getImagePath } from '../../utils/imagePath';
+
 
 interface PinPosition {
   id: string;
@@ -28,10 +28,10 @@ export default function VenuesPage() {
 
   const generateRandomPositions = () => {
     const pinTypes = [
-      { type: 'hotel', image: getImagePath('/images/hotelbuilding.png') },
-      { type: 'wrestling match', image: getImagePath('/images/wrestlingring.png') },
-      { type: 'food', image: getImagePath('/images/food.png') },
-      { type: 'gym', image: getImagePath('/images/dumbell.png') }
+        { type: 'hotel', image: '/images/hotelbuilding.png' },
+  { type: 'wrestling match', image: '/images/wrestlingring.png' },
+  { type: 'food', image: '/images/food.png' },
+  { type: 'gym', image: '/images/dumbell.png' }
     ];
 
     // Generate 12 pins (3 of each type)
@@ -123,7 +123,7 @@ export default function VenuesPage() {
           }}
         >
           <img 
-            src={getImagePath('/images/mapview.png')} 
+            src="/images/mapview.png" 
             alt="Map" 
             style={{
               width: '100%',

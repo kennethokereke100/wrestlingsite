@@ -12,7 +12,7 @@ import {
   Avatar
 } from '@mui/material';
 import { ArrowBack, Send } from '@mui/icons-material';
-import { getImagePath } from '../../../utils/imagePath';
+
 
 interface Message {
   id: number;
@@ -102,7 +102,7 @@ export default function TextingPage() {
           </IconButton>
           
           <Avatar 
-            src={getImagePath('/images/promoter.jpg')}
+            src="/images/promoter.jpg"
             sx={{ 
               width: '40px', 
               height: '40px', 

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { getImagePath } from '../utils/imagePath';
+
 
 interface IphoneTemplateProps {
   className?: string;
@@ -13,7 +13,7 @@ export default function IphoneTemplate({ className = '', href }: IphoneTemplateP
     <div className={`relative ${className}`}>
       {/* iPhone Image */}
       <img 
-        src={getImagePath('/images/iphone.png')} 
+        src="/images/iphone.png" 
         alt="iPhone App" 
         className="w-full h-full object-contain"
       />
