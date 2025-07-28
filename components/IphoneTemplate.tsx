@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { getAssetPath } from '../lib/getAssetPath';
 
 interface IphoneTemplateProps {
   className?: string;
@@ -12,7 +13,7 @@ export default function IphoneTemplate({ className = '', href }: IphoneTemplateP
     <div className={`relative ${className}`}>
       {/* iPhone Image */}
       <img 
-        src="/images/iphone.png" 
+        src={getAssetPath('/images/iphone.png')} 
         alt="iPhone App" 
         className="w-full h-full object-contain"
       />

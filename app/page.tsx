@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import IphoneTemplate from '../components/IphoneTemplate';
+import { getAssetPath } from '../lib/getAssetPath';
 
 export default function Home() {
   const scrollSectionRef = useRef<HTMLDivElement>(null);
@@ -39,7 +40,7 @@ export default function Home() {
       <div 
         className="fixed inset-0 bg-black z-0"
         style={{
-          backgroundImage: 'url(/images/wrestlingbg.png)',
+          backgroundImage: `url(${getAssetPath('/images/wrestlingbg.png')})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -53,7 +54,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/images/wrestlingbg.png)'
+            backgroundImage: `url(${getAssetPath('/images/wrestlingbg.png')})`
           }}
         />
         
@@ -79,7 +80,7 @@ export default function Home() {
             <div className="flex items-center gap-6 md:gap-8">
               {/* Wrestler Image */}
               <img 
-                src="/images/wrestler.png" 
+                src={getAssetPath('/images/wrestler.png')} 
                 alt="Wrestler" 
                 className="animate-floating w-44 h-44 md:w-56 md:h-56 object-contain"
               />
@@ -112,7 +113,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/images/wrestlingbg.png)'
+            backgroundImage: `url(${getAssetPath('/images/wrestlingbg.png')})`
           }}
         />
         
@@ -128,7 +129,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-8">
                   {/* Wrestler Image */}
                   <img 
-                    src="/images/wrestlerverify.png" 
+                    src={getAssetPath('/images/wrestlerverify.png')} 
                     alt="Wrestler" 
                     className="animate-floating w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 object-contain"
                   />
@@ -175,7 +176,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/images/wrestlingbg.png)'
+            backgroundImage: `url(${getAssetPath('/images/wrestlingbg.png')})`
           }}
         />
         
@@ -191,7 +192,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-8">
                   {/* Wrestler Image */}
                   <img 
-                    src="/images/wrestlermaps.png" 
+                    src={getAssetPath('/images/wrestlermaps.png')} 
                     alt="Wrestler" 
                     className="animate-floating w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 object-contain"
                   />
@@ -238,7 +239,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/images/wrestlingbg.png)'
+            backgroundImage: `url(${getAssetPath('/images/wrestlingbg.png')})`
           }}
         />
         
@@ -254,7 +255,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-8">
                   {/* Wrestler Image */}
                   <img 
-                    src="/images/wrestercall.png" 
+                    src={getAssetPath('/images/wrestercall.png')} 
                     alt="Wrestler" 
                     className="animate-floating w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 object-contain"
                   />
