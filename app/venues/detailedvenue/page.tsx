@@ -11,7 +11,7 @@ import {
   Button
 } from '@mui/material';
 import { Close } from '@mui/icons-material';
-import { getAssetPath } from '../../../lib/getAssetPath';
+import { getImagePath } from '../../../utils/imagePath';
 
 interface VenueData {
   title: string;
@@ -68,15 +68,15 @@ function DetailedVenueContent() {
   const getPinImage = (type: string | null): string => {
     switch (type) {
       case 'gym':
-        return getAssetPath('/images/dumbell.png');
+        return getImagePath('/images/dumbell.png');
       case 'food':
-        return getAssetPath('/images/food.png');
+        return getImagePath('/images/food.png');
       case 'wrestling match':
-        return getAssetPath('/images/wrestlingring.png');
+        return getImagePath('/images/wrestlingring.png');
       case 'hotel':
-        return getAssetPath('/images/hotelbuilding.png');
+        return getImagePath('/images/hotelbuilding.png');
       default:
-        return getAssetPath('/images/wrestlingring.png');
+        return getImagePath('/images/wrestlingring.png');
     }
   };
 
@@ -157,7 +157,7 @@ function DetailedVenueContent() {
           }}
         >
           <img 
-            src={getAssetPath('/images/mapview.png')} 
+            src={getImagePath('/images/mapview.png')} 
             alt="Map" 
             style={{
               width: '100%',

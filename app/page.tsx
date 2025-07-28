@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import IphoneTemplate from '../components/IphoneTemplate';
-import { getAssetPath } from '../lib/getAssetPath';
+import { getImagePath } from '../utils/imagePath';
 
 export default function Home() {
   const scrollSectionRef = useRef<HTMLDivElement>(null);
@@ -40,7 +40,7 @@ export default function Home() {
       <div 
         className="fixed inset-0 bg-black z-0"
         style={{
-          backgroundImage: `url(${getAssetPath('/images/wrestlingbg.png')})`,
+          backgroundImage: `url(${getImagePath('/images/wrestlingbg.png')})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -54,7 +54,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(${getAssetPath('/images/wrestlingbg.png')})`
+            backgroundImage: `url(${getImagePath('/images/wrestlingbg.png')})`
           }}
         />
         
@@ -80,7 +80,7 @@ export default function Home() {
             <div className="flex items-center gap-6 md:gap-8">
               {/* Wrestler Image */}
               <img 
-                src={getAssetPath('/images/wrestler.png')} 
+                src={getImagePath('/images/wrestler.png')} 
                 alt="Wrestler" 
                 className="animate-floating w-44 h-44 md:w-56 md:h-56 object-contain"
               />
@@ -113,7 +113,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(${getAssetPath('/images/wrestlingbg.png')})`
+            backgroundImage: `url(${getImagePath('/images/wrestlingbg.png')})`
           }}
         />
         
@@ -129,7 +129,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-8">
                   {/* Wrestler Image */}
                   <img 
-                    src={getAssetPath('/images/wrestlerverify.png')} 
+                    src={getImagePath('/images/wrestlerverify.png')} 
                     alt="Wrestler" 
                     className="animate-floating w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 object-contain"
                   />
@@ -176,7 +176,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(${getAssetPath('/images/wrestlingbg.png')})`
+            backgroundImage: `url(${getImagePath('/images/wrestlingbg.png')})`
           }}
         />
         
@@ -192,7 +192,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-8">
                   {/* Wrestler Image */}
                   <img 
-                    src={getAssetPath('/images/wrestlermaps.png')} 
+                    src={getImagePath('/images/wrestlermaps.png')} 
                     alt="Wrestler" 
                     className="animate-floating w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 object-contain"
                   />
@@ -239,7 +239,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(${getAssetPath('/images/wrestlingbg.png')})`
+            backgroundImage: `url(${getImagePath('/images/wrestlingbg.png')})`
           }}
         />
         
@@ -255,7 +255,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-8">
                   {/* Wrestler Image */}
                   <img 
-                    src={getAssetPath('/images/wrestercall.png')} 
+                    src={getImagePath('/images/wrestercall.png')} 
                     alt="Wrestler" 
                     className="animate-floating w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 object-contain"
                   />

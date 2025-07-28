@@ -16,6 +16,7 @@ import {
   Rating
 } from '@mui/material';
 import { ArrowBack, Phone, Search, Star } from '@mui/icons-material';
+import { getImagePath } from '../../utils/imagePath';
 
 export default function CallPage() {
   const router = useRouter();
@@ -90,7 +91,7 @@ export default function CallPage() {
                 marginBottom: '16px'
               }}>
                 <img 
-                  src="/images/promoter.jpg" 
+                  src={getImagePath('/images/promoter.jpg')} 
                   alt="Promoter" 
                   style={{
                     width: '100%',
